@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.pages.scratch_card.ScratchCard">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_scratch_card"
+        android:background="@color/white"
+        app:theme="@style/ToolbarTheme"
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <TextView
+            android:id="@+id/image_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate Scratch Card"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"/>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:id="@+id/show_coupon"
+            android:layout_height="match_parent"
+            android:layout_gravity = "right">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_three_lines"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/scratch_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/toolbar_scratch_card"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/toolbar_scratch_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar_scratch_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:hint="From date"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_from_date"
+                android:focusableInTouchMode="false"
+                android:textColorHint="@color/grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/button_text_color"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_below="@+id/toolbar_scratch_card"
+            android:hint="To date"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_to_date"
+                android:textColorHint="@color/grey"
+                android:focusableInTouchMode="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/button_text_color"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_below="@+id/toolbar_scratch_card"
+            android:hint="Discount Amount"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_disc_amt"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/button_text_color"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minimum Amount - ₹ 5000"
+            android:layout_gravity="center"
+            android:textColor="@color/button_text_color"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/button_rl"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/light_grey"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/hide_scratch_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Please wait..."
+            android:visibility="gone"
+            android:textAllCaps="false"
+            android:textColor="@color/button_text_color"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/scratch_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:textColor="@color/button_text_color"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "359487431163",
+    "firebase_url": "https://pos-stockone.firebaseio.com",
+    "project_id": "pos-stockone",
+    "storage_bucket": "pos-stockone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359487431163:android:708cab259236a8b5",
+        "android_client_info": {
+          "package_name": "com.headrun.pos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "359487431163-jn8115kitcibeukckhu2k9rgkuhnp4me.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.headrun.pos",
+            "certificate_hash": "fd4b0c9e112616c42314711c7461e971809eae6c"
+          }
+        },
+        {
+          "client_id": "359487431163-ear7dfommhcjscqtraee6ttv28k6q828.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM2hkyTwVqgMrhJslhhDNAluhxw0KEpJU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "359487431163-ear7dfommhcjscqtraee6ttv28k6q828.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
